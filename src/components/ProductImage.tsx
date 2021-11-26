@@ -20,7 +20,7 @@ export const ProductImage = ({
 
   if (img) {
     imgToShow = img;
-  } else if (product.img) {
+  } else if ('img' in product && !!product.img) {
     imgToShow = product.img;
   } else {
     imgToShow = noImage;
